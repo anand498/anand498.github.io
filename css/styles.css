@@ -6,33 +6,55 @@ body {
 body.active {
     overflow: hidden;
     z-index: -1}
-.no-js #experience-timeline>div {
-    background: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #dcd9d9}
-.no-js #experience-timeline>div h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: #374054;
-    display: inline-block;
-    margin: 0}
-.no-js #experience-timeline>div h4 {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #7e8890;
-    margin: 0 0 15px 0}
-.no-js #experience-timeline>div p {
-    color: #74808a;
-    font-size: 0.9em;
-    margin: 0}
-.no-js #experience-timeline:before,.no-js #experience-timeline:after {
-    content: none}
-@keyframes dropHeader {
-    0% {
-    transform: translateY(-100%)}
-100% {
-    transform: translateY(0)}
+
+
+.social-menu ul {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #00b59d
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #4d4c4c;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #0077B5;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #55acee;
 }
 
 header {
@@ -40,26 +62,24 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    text-align: right;
+    text-align: center;
     z-index: 5;
-    padding-right: 30px;
-   
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 0.75s}
 header ul {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(194, 151, 151, 0.8);
     text-align: center;
     padding: 10px;
     margin: 0;
-    width: 90%;
+    width: 100%;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px}
-header li {
+    header li {
     display: inline-block}
-header a {
+    header a {
     display: block;
     color: #343637;
     padding: 10px}
@@ -68,12 +88,12 @@ header a:hover {
     text-decoration: none;
     background: #eee;
     border-radius: 4px}
-header a:focus {
+ header a:focus {
     color: #3498db;
     text-decoration: none}
-header.active {
+    .active {
     display: block}
-header.sticky {
+    navbar.sticky {
     position: fixed;
     z-index: 999}
 #menu.active {
@@ -125,32 +145,19 @@ footer {
     text-align: center}
 .top i {
     color: #74808a}
-.social {
-    text-align: right}
-.social ul {
-    margin: 5px 0 0 0;
-    padding: 0}
-.social li {
-    display: inline-block;
-    font-size: 1.25em;
-    list-style: none}
-.social a {
-    display: block;
-    color: #74808a;
-    padding: 10px}
-.social a:hover {
-    color: #3498db}
 .btn-rounded-white {
     display: inline-block;
     color: #fff;
-    padding: 15px 25px;
+    padding: 12px 20px;
     border: 3px solid #fff;
     border-radius: 30px;
     transition: .5s ease all}
+
 .btn-rounded-white:hover {
     color: #3498db;
     background: #fff;
-    text-decoration: none}
+    text-decoration: none;
+    }
 .shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)}
 .shadow-large {
@@ -178,7 +185,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    
     background-size: cover;
     padding: 15px;
     overflow: hidden}
@@ -188,30 +195,31 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center}
-#lead-content h1,#lead-content h2 {
-    margin: 0}
-#lead-content h1 {
+    text-align: center
+    }
+#lead-content h2
+{
     color: #fff;
-    font-weight: 900;
-    font-size: 5em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 0.9em}
-#lead-content h2 {
-    color: #a0cfee;
+    font-family: Sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
     font-weight: 500;
-    font-size: 2.25em;
-    margin-bottom: 15px}
+    letter-spacing: 2.7px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+
 #lead-overlay {
     position: absolute;
-    height: 100%;
+    height:100%;
     width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(63, 127, 170, 0.8);
+    background-image: url(../images/project.png);
+    /* background: #2d5672; */
     z-index: 1}
 #lead-down {
     position: absolute;
@@ -244,8 +252,13 @@ footer {
     transform: scale(1, 1)}
 }
 #about {
-    padding: 75px 15px;
-    border-bottom: 1px solid #dcd9d9}
+    padding: 40px 15px;
+    font-family: Sans-serif;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.6em;
+    }
 #about h2 {
     color: #374054}
 #about p {
@@ -428,10 +441,14 @@ footer {
     margin: 0 0 15px 0;
     color: #fff;
     font-weight: 500}
-#contact-form {
+#contact-form 
+{
     max-width: 500px;
-    margin: 0 auto}
-#contact-form input,#contact-form textarea {
+    margin: 0 auto
+}
+#contact-form input,
+#contact-form textarea 
+{
     display: block;
     width: 100%;
     padding: 10px;
@@ -448,7 +465,10 @@ footer {
 #contact-form textarea {
     height: 150px;
     resize: none}
-#contact-form button {
+
+
+#contact-form button 
+{
     display: block;
     width: 100%;
     background: #fff;
@@ -458,7 +478,9 @@ footer {
     color: #3498db;
     font-weight: 700;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
-    transition: .5s ease all}
+    transition: .5s ease all
+
+}
 #contact-form button:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(194, 188, 188, 0.699)}
 .optional-section {
@@ -540,7 +562,7 @@ footer {
     overflow-y: auto;
     box-shadow: none;
     border-radius: 0;
-    width: 100%}
+    }
 #menu li {
     display: block;
     margin-bottom: 10px}
@@ -564,9 +586,7 @@ footer {
     transform: none}
 footer {
     text-align: center}
-.social {
-    text-align: center}
-}
+
 @media only screen and (max-width: 480px) {
     #lead-content h1 {
     font-size: 1.5em}
