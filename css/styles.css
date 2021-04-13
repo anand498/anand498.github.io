@@ -4469,37 +4469,6 @@ input[type="button"].btn--primary:focus {
     color: var(--color-2);
 }
 
-/* ------------------------------------------------------------------- 
- * ## footer social
- * ------------------------------------------------------------------- */
-.s-footer__social {
-    list-style: none;
-    font-size: var(--text-lg);
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-flow: row wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    margin: 0 0 0 .4rem;
-    position: relative;
-    top: -6%;
-}
-
-.s-footer__social a {
-    color: white;
-}
-
-.s-footer__social a:focus, 
-.s-footer__social a:hover {
-    color: var(--color-2);
-}
-
-.s-footer__social li {
-    padding-left: 0;
-    margin-right: 1.6rem;
-}
 
 /* ------------------------------------------------------------------- 
  * ## copyright
