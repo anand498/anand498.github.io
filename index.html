@@ -312,31 +312,32 @@
                 <h3>Projects</h3>
             </div>
         </div>
-
-        <div class="row collapse block-large-1-2 block-medium-1-2  block-500-stack folio-list">
-            <div class="column folio-item">
+            <div class="row collapse block-large-1-2 block-medium-1-2  block-500-stack folio-list">
+            <div class="column folio-item"><!--road detection-->
                 <a href="#modal-01" class="folio-item__thumb">
+                    <img src="assets/images/projects/roadds.png" 
+                         srcset="assets/images/projects/roadds.png 1x, 
+                                 assets/images/projects/roadss@2x 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+            <div class="column folio-item"><!--face recognition-->
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="assets/images/projects/face_recognition.jpeg" 
+                         srcset="assets/images/projects/face_recognition.jpeg 1x, 
+                                 assets/images/projects/face_recognition@2x.png 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            
+            <div class="column folio-item"><!--my doctor-->
+                <a href="#modal-03" class="folio-item__thumb">
                     <img src="assets/images/mydoctor.jpeg" 
                          srcset="assets/images/projects/mydoctor.jpeg 1x, 
                                  assets/images/projects/mydoctor@2x.jpeg 2x" alt="">
                 </a>
             </div> <!-- end folio-item -->
-            <div class="column folio-item">
-                <a href="#modal-02" class="folio-item__thumb">
-                    <img src="assets/images/projects/face_recognition.jpeg" 
-                         srcset="assets/images/projects/face_recognition.jpeg 1x, 
-                                 assets/images/projects/face_recognition@2x.jpeg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
-            <div class="column folio-item">
-                <a href="#modal-03" class="folio-item__thumb">
-                    <img src="assets/images/projects/roadds.png" 
-                         srcset="assets/images/projects/roadds.png 1x, 
-                                 assets/images/projects/roadss@2x.png 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
 
-            <div class="column folio-item">
+            <div class="column folio-item"><!--pred calc--> 
                 <a href="#modal-04" class="folio-item__thumb">
                     <img src="assets/images/projects/object-detection.png" 
                          srcset="assets/images/projects/object-detection.png 1x, 
@@ -352,68 +353,90 @@
 
         <!-- Modal Templates Popup
         =========================================================== -->
-        <div id="modal-01" hidden>
+        <div id="modal-01" hidden><!--road detection-->
             <div class="modal-popup">
-                <img src="assets/gallery/g-droplet.jpg" alt="" />
+                <img src="assets/images/project-descriptions/roadds.png" alt="" />
     
                 <div class="modal-popup__desc">
-                    <h5>Droplet</h5>
-                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <h5>ROADSS</h5>
+                    <p>Designed a car prototype that prevents vehicular collisions by detecting obstacles such as potholes
+                    through Machine learning and Image Processing. This idea was adjudged as the Best project in an
+                    Exhibition held by SCOPE, VIT.</p>
+                    <ul class="modal-popup__cat">
+                        <li>TensorFlow</li>
+                        <li>Arduino UNO</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden><!--face recognition-->
+            <div class="modal-popup">
+                <img src="assets/images/project-descriptions/face_recognition.png" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Face-Liveness Detection using Neural Networks</h5>
+                    <p>A project further developed  that detected live-faces in front of a webcam 
+                    using image processing techniques and later trained them to detect for multiple faces in an image 
+                    frame and check for video/image attacks. Accuracy - 89% 
+                    </p>
                     <ul class="modal-popup__cat">
                         <li>Branding</li>
-                        <li>Product Design</li>
+                        <li>Python</li>
+                        <li>Tensorflow</li>
+                        <li>CNN</li>
+                        <li>Flask</li>
+                        <li>Django</li>
                     </ul>
                 </div>
     
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                <a href="https://github.com/anand498/Face-Liveness-Detection" class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
 
-        <div id="modal-02" hidden>
+        <div id="modal-03" hidden><!--my doctor-->
             <div class="modal-popup">
-                <img src="assets/images/g-lamp.jpg" alt="" />
+                <img src="assets/images/project-descriptions/mydoctor.jpeg" alt="" />
     
                 <div class="modal-popup__desc">
-                    <h5>The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Branding</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-03" hidden>
-            <div class="modal-popup">
-                <img src="assets/gallery/g-minimalismo.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Minimalismo</h5>
-                    <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                    <h5>My Doctor</h5>
+                    <p>An Android App designed and developed for maintaining patient records and data with minimal 
+                    time-spent in entering records of patients across various formats. The app is being used by 6 private 
+                    doctors for tracking patient data. The development was completed within 3 days from scratch. 
+                    </p>
                     <ul class="modal-popup__cat">
                         <li>Product Design</li>
+                        <li>Android</li>
+                        <li>SQL</li>
+                        <li>Java</li>
                     </ul>
                 </div>
     
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                <a href="https://github.com/anand498/MyDoctor" class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
 
-        <div id="modal-04" hidden>
+        <div id="modal-04" hidden><!--pred calc--> 
             <div class="modal-popup">
-                <img src="assets/gallery/g-shutterbug.jpg" alt="" />
+                <img src="assets/images/project-descriptions/object-detection.png" alt="" />
     
                 <div class="modal-popup__desc">
-                    <h5>Shutterbug</h5>
-                    <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                    <h5>Pred Calc</h5>
+                    <p>The application performed arithmetic operations on the basis of the Hand Gestures made by the
+                        User. It was developed with an aim to cater around 200 students in an NGO for developing their 
+                        Interests for Mathematics and good Human Computer Interaction
+                        </p>
                     <ul class="modal-popup__cat">
                         <li>E-Commerce</li>
+                        <li>Keras</li>
+                        <li> TensorFlow</li>
+                        <li>Flask</li>
                     </ul>
                 </div>
     
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                <a href="https://github.com/anand498/PredCalc" class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
 
