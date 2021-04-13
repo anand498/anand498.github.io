@@ -213,6 +213,7 @@
     --vspace-4    : calc(4 * var(--space));
     --vspace-4_5  : calc(4.5 * var(--space));
     --vspace-5    : calc(5 * var(--space));
+    --vspace-6    : calc(6.5 * var(--space));
 
     /* type scale
      * ratio 1:2 | base: 18px
@@ -3819,8 +3820,8 @@ input[type="button"].btn--primary:focus {
 }
 
 .s-about__pic {
-    width: var(--vspace-5);
-    height: var(--vspace-5);
+    width: var(--vspace-6);
+    height: var(--vspace-6);
     border: 1.6rem solid rgba(255, 255, 255, 0.02);
     border-radius: 50%;
 }
