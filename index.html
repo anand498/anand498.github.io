@@ -1,299 +1,654 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
 <head>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
+    <title>Ceevee 2.0</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anand Pandey</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
 
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-  
+<body id="top" class="ss-preload">
 
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#experience">Experience</a></li>
+                    <li><a class="smoothscroll" href="#education">Education</a></li>
+                    <li><a class="smoothscroll" href="#projects">Projects</a></li>
+                    <li><a class="smoothscroll" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
         
-        <ul id="menu" class="shadow">
-            
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h2 class="elementor-heading-title elementor-size-default">Hey! I'm Anand.</h2>
-            <a href="https://drive.google.com/u/0/uc?id=1G_kaTsitmThYw3k3ApI7vVCIVPMn9Ma-&export=download" class="btn-rounded-white">Resume</a>
-        </div>
-        <!-- End #lead-content -->
 
-        <div id="lead-overlay">
-        <div class="social-menu">
-        <ul>
-        <li><a href="mailto:anand4p98@gmail.com"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="https://github.com/anand498"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/anand498/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://twitter.com/anand_498"><i class="fa fa-twitter"></i></a></li>
-            
-        </ul>
-        </div></div>
-    </div>
-    <!-- End #lead -->
-        <div class="elementor-text-editor elementor-clearfix"id="about">
-            <p>
-            I am a Software Engineer, passionate to build products that make people productive.I also love to work on Deep Learning and AI.
-            </p>
-        </div>
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Anand Pandey.</h1>
+
+                    <h3>
+                    I'm a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
+                    effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                    and learn more <a class="smoothscroll" href="#about">about me</a>.
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="#0"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#0"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                        <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <a href="#0" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                             Resume
+                        </a>
+                    </div>
+                </div>
+                   
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/user-06.jpg" alt="">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+                quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
+                qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
+                nostrum exercitationem ullam corporis suscipit laboriosam.
+                </p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
     
-    <!-- End #about -->
-
-
-
-
-<!-- Experience Section--> 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2020 – Present">
-                <h3>Extrapreneurs India</h3>
-                <h4>Software Developer</h4>
-                <p>
-                Worked on development of AI microservices ranging from biometric authentication to data 
-                extraction. Developed services using Python, Flask, FastAPI in Agile development. 
-                    Also worked with AWS Services like Lambda, API Gateway, Textract and SAM.
-                </p>
+                        <p>
+                        Jonathan Doe <br>
+                        1600 Amphitheatre Parkway <br>
+                        Mountain View, CA 94043 US <br>
+                        <a href="tel:+1975432345">+197 543 2345</a> <br>
+                        <a href="mailto:#0">sayhello@ceevee.com</a>
+                        </p>
+                        
+                    </div>
+                </div>
             </div>
+        </div> <!-- end row -->
 
-             <div data-date="March 2020 – September 2020">
-                <h3>Pucho AI</h3>
-                <h4>Deep Learning Intern</h4>
-                <p>
-                   Developed a product that extracts apparel information, brand details, and clothing type with the help of 
-                    Neural Networks from videos. My responsibilities included developing a model for detecting clothing on 
-                    subjects and integrating it with the front-end. The accuracy of the system is 86%.
-                </p>
-            </div>
-
-            <div data-date="May 19 – June 2019">
-                <h3>Reliance Industries Limited</h3>
-                <h4>Machine Learning Intern</h4>
-                <p>
-                    Engineered an application for Face Liveness Detection using Depth Prediction and Texture Analysis. 
-                    This application was developed for employees at Reliance for biometric purposes. The system was 
-                    deployed across some departments at Reliance. The system achieved 94% accuracy
-
-                </p>
-            </div>
-
-           
-        </div>
-    </div>
-<!-- End Experience Section--> 
+    </section> <!-- end s-about -->
 
 
-
-<!-- Education Section--> 
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Vellore Institute of Technology, Chennai</h3>
-            <span class="education-date">July 2016 - May 2020</span>
-            <h4>Bachelor of Technology in Computer Science</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-        <!-- End .education-block -->
-
+    <!-- resume
+    ================================================== -->
+    <section id="experience" class="s-resume target-section">
         
-    </div>
-<!-- End Education Section--> 
-
-
-<!-- Projects Section--> 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        
-        <div class="container">
-            <div class="row">
-                
-                
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Face-Liveness Detection using Neural Networks</h3>
-                        <p>
-                        A project further developed after the internship that detected live-faces in front of a webcam 
-                        using image processing techniques and later trained them to detect for multiple faces in an image 
-                        frame and check for video/image attacks. Accuracy - 89% 
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                
-                
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>PredCalc </h3>
-                        <p>
-                            The application performed arithmetic operations on the basis of the Hand Gestures made by the
-                            User. It was developed with an aim to cater around 200 students in an NGO for developing their 
-                            Interests for Mathematics and good Human Computer Interaction.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-
-
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>MyDoctor </h3>
-                        <p>
-                    An Android App designed and developed for maintaining patient records and data with minimal 
-                    time-spent in entering records of patients across various formats. The app is being used by 6 private 
-                    doctors for tracking patient data. The development was completed within 3 days from scratch. 
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Effusion</h3>
-                        <p>
-                        A voice-based browser that executed functions on the basis of voice inputs. Designed for visually 
-                        impaired individuals to explore the Web. This product was among the top 10 products developed during 
-                        Mozilla Hackathon'17. My responsibilities included designing the I/O workflow of the system. 
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-
-
-
-
-
+        <div class="row s-experience_section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Experience</h3>
             </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-    
+            <div class="column large-9 tab-12">
+                <div class="experience-block">
 
-     <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <h3 class="section">Languages and Libraries</h3>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>Tensorflow</li>
-            <li>Keras</li>
-        </ul>
-        <h3 class="section">Frameworks</h3>
-        <ul>
-            <li>Django</li>
-            <li>Flask</li>
-            <li>FastAPI</li>
-        </ul>
-         <h3 class="section">Other</h3>
-        <ul>
-            <li>AWS</li>
-            <li>Flask</li>
-        </ul>
+                    <div class="experience-block__header">
+                        <h4 class="h3">Extrapreneurs India</h4>
+                        <p class="experience-block__header-meta">
+                            <span>Software Developer</span> 
+                            <span class="experience-block__header-date">
+                                September 2020 - Present
+                            </span>
+                        </p>
+                    </div>
 
-    </div>
-  
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/anand4p98@gmail.com">
-                <input type="Subject" name="_subject" placeholder="Subject" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
                     <p>
-                         &copy;  Anand Pandey 2021
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
+                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
+                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
+                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
                     </p>
+
+                </div> <!-- end experience-block -->
+
+
+                <div class="experience-block">
+
+                    <div class="experience-block__header">
+                        <h4 class="h3">Pucho AI</h4>
+                        <p class="experience-block__header-meta">
+                            <span>Deep Learning Intern</span> 
+                            <span class="experience-block__header-date">
+                                March 2020 - July 2020
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
+                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
+                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
+                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
+                    </p>
+
                 </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
+
+
+                <div class="experience-block">
+
+                    <div class="experience-block__header">
+                        <h4 class="h3">Reliance Industries</h4>
+                        <p class="experience-block__header-meta">
+                            <span>Machine Learning Intern</span> 
+                            <span class="experience-block__header-date">
+                                May 2019 - June 2019
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
+                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
+                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
+                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
+                    </p>
+
+                </div> <!-- end experience-block -->
+            </div>
+        </div> <!-- s-experience_section -->
+
+
+        <div class="row s-experience_section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="experience-block">
+
+                    <div class="experience-block__header">
+                        <h4 class="h3">University of Life</h4>
+                        <p class="experience-block__header-meta">
+                            <span>Master in Graphic Design</span> 
+                            <span class="experience-block__header-date">
+                                April 2015
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
+                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
+                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
+                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
+                    </p>
+
+                </div> <!-- end experience-block -->
+
+                <div class="experience-block">
+
+                    <div class="experience-block__header">
+                        <h4 class="h3">School of Cool Designers</h4>
+                        <p class="experience-block__header-meta">
+                            <span>B.A. Degree in Graphic Design</span> 
+                            <span class="experience-block__header-date">
+                                August 2012
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
+                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
+                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
+                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
+                    </p>
+
+                </div> <!-- end experience-block -->
+            </div>
+        </div> <!-- s-experience_section -->
+
+
+        <div class="row s-experience_section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="experience-block">
+                <h3>Frameworks</h3>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/django-logo.webp" class="responsive-img" /><span class="name">Django</span>
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/flask-logo.png" class="responsive-img" /><span class="name">Flask</span>
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/keras-logo.png" class="responsive-img" /><span class="name">Keras</span>
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/tensorflow-logo-1.png" class="responsive-img" /><span class="name">TensorFlow</span>
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
+              </div>
+            </div>
+
                 
+
+                  <!-- <div class="skills-container">
+                    <div class="skill-container large"><i class="devicon-html5-plain colored"></i><span class="name">HTML 5</span></div>
+                    <div class="skill-container large"><i class="devicon-css3-plain colored"></i><span class="name">CSS 3</span></div>
+                    <div class="skill-container large"><i class="devicon-sass-plain colored"></i><span class="name">Sass</span></div>
+                    <div class="skill-container large"><i class="devicon-javascript-plain colored"></i><span class="name">JavaScript</span></div>
+                    <div class="skill-container large"><i class="devicon-python-plain colored"></i><span class="name">Python</span></div>
+                    <div class="skill-container large"><i class="devicon-csharp-plain colored"></i><span class="name">C#</span></div>
+                    <div class="skill-container large"><i class="devicon-java-plain colored"></i><span class="name">Java</span></div>
+                    <div class="skill-container large"><i class="devicon-mongodb-plain colored"></i><span class="name">Mongo DB</span></div>
+                    <div class="skill-container large"><i class="devicon-postgresql-plain colored"></i><span class="name">PostgreSQL</span></div>
+                    <div class="skill-container large"><i class="devicon-git-plain colored"></i><span class="name">Git</span></div>
+                    <div class="skill-container large"><i class="devicon-java-plain colored"></i><span class="name">Nginx</span></div> 
+                    --> 
+
+                
+
+                </div> <!-- end experience-block -->
+
+            </div>
+        </div> <!-- s-experience_section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="projects" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>A Few Of My Latest Creations</h3>
             </div>
         </div>
-    </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/droplet.jpg" 
+                         srcset="images/portfolio/droplet.jpg 1x, 
+                                 images/portfolio/droplet@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/lamp.jpg" 
+                         srcset="images/portfolio/lamp.jpg 1x, 
+                                 images/portfolio/lamp@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/minimalismo.jpg" 
+                         srcset="images/portfolio/minimalismo.jpg 1x, 
+                                 images/portfolio/minimalismo@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/shutterbug.jpg" 
+                         srcset="images/portfolio/shutterbug.jpg 1x, 
+                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="images/portfolio/fuji.jpg" 
+                         srcset="images/portfolio/fuji.jpg 1x, 
+                                 images/portfolio/fuji@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="images/portfolio/skaterboy.jpg" 
+                         srcset="images/portfolio/skaterboy.jpg 1x, 
+                                 images/portfolio/skaterboy@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-07" class="folio-item__thumb">
+                    <img src="images/portfolio/rucksack.jpg" 
+                         srcset="images/portfolio/rucksack.jpg 1x, 
+                                 images/portfolio/rucksack@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-08" class="folio-item__thumb">
+                    <img src="images/portfolio/sanddunes.jpg" 
+                         srcset="images/portfolio/sanddunes.jpg 1x, 
+                                 images/portfolio/sanddunes@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-droplet.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Droplet</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>The Lamp</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Minimalismo</h5>
+                    <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-shutterbug.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Shutterbug</h5>
+                    <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                    <ul class="modal-popup__cat">
+                        <li>E-Commerce</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Fuji</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Skaterboy</h5>
+                    <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-07" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-rucksack.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Rucksack</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-08" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Sand Dunes</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+
+    </section> <!-- end s-portfolio -->
+
+
+   
+
+
+  
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Say Hello</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                Have a new project in mind? Let's collaborate and build something awesome. 
+                Let's turn that idea to an even greater product :)
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:sayhello@ceevee.com">sayhello@ceevee.com</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Phone
+                            </h5>
+                            <p class="contact-block__content">
+                                <a href="tel:+1975432345">+197 543 2345</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:sayhello@ceevee.com" class="mailtoui btn btn--primary h-full-width">Let's Talk</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Ceevee 2021</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
