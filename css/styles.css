@@ -580,25 +580,7 @@ a img {
     border: none;
 }
 
-/* ------------------------------------------------------------------- 
- * ## inputs
- * ------------------------------------------------------------------- */
-fieldset {
-    margin: 0;
-    padding: 0;
-}
 
-input[type="email"], 
-input[type="number"], 
-input[type="search"], 
-input[type="text"], 
-input[type="tel"], 
-input[type="url"], 
-input[type="password"], textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
 
 
 /* ===================================================================
@@ -706,63 +688,7 @@ input[type="password"], textarea {
     justify-content: center;
 }
 
-/* flex item utility alignment classes
- */
-.align-center {
-    margin: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-}
 
-.align-left {
-    margin-right: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-}
-
-.align-right {
-    margin-left: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-}
-
-.align-x-center {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.align-x-left {
-    margin-right: auto;
-}
-
-.align-x-right {
-    margin-left: auto;
-}
-
-.align-y-center {
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-}
-
-.align-y-top {
-    -webkit-align-self: flex-start;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-}
-
-.align-y-bottom {
-    -webkit-align-self: flex-end;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-}
 
 /* large screen column widths 
  */
@@ -1352,91 +1278,6 @@ input[type="password"], textarea {
 }
 
 
-/* ===================================================================
- * # MISC 
- *
- * ------------------------------------------------------------------- */
-.h-group:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* misc helper classes
- */
-.is-hidden {
-    display: none;
-}
-
-.is-invisible {
-    visibility: hidden;
-}
-
-.h-screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    border: 0;
-    position: absolute;
-}
-
-.h-antialiased {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.h-overflow-hidden {
-    overflow: hidden;
-}
-
-.h-remove-top {
-    margin-top: 0;
-}
-
-.h-remove-bottom {
-    margin-bottom: 0;
-}
-
-.h-add-half-bottom {
-    margin-bottom: var(--vspace-0_5) !important;
-}
-
-.h-add-bottom {
-    margin-bottom: var(--vspace-1) !important;
-}
-
-.h-no-border {
-    border: none;
-}
-
-.h-full-width {
-    width: 100%;
-}
-
-.h-text-center {
-    text-align: center;
-}
-
-.h-text-left {
-    text-align: left;
-}
-
-.h-text-right {
-    text-align: right;
-}
-
-.h-pull-left {
-    float: left;
-}
-
-.h-pull-right {
-    float: right;
-}
 
 
 /* ===================================================================
@@ -1512,25 +1353,6 @@ a:hover, a:active {
 }
 
 
-/* ===================================================================
- * # typography & general theme styles
- * 
- * ------------------------------------------------------------------- */
-
-/* type scale - ratio 1:2 | base: 18px
- * -------------------------------------------------------------------
- * --text-display-3 = (77.40px)
- * --text-display-2 = (64.50px)
- * --text-display-1 = (53.75px)
- * --text-xxxl      = (44.79px)
- * --text-xxl       = (37.32px)
- * --text-xl        = (31.10px)
- * --text-lg        = (25.92px)
- * --text-md        = (21.60px)
- * --text-size      = (18.00px) BASE
- * --text-sm        = (15.00px)
- * --text-xs        = (12.50px)
- * -------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: var(--font-1);
@@ -1723,72 +1545,96 @@ img,
 
 
 
+/* ------------------------------------------------------------------- 
+ * ## Style Placeholder Text
+ * ------------------------------------------------------------------- */
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: var(--color-placeholder);
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--color-placeholder);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--color-placeholder);
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: var(--color-placeholder);
+}
+
+
+/* ===================================================================
+ * # buttons 
+ *
+ * ------------------------------------------------------------------- */
+.btn, 
+button {
+    --btn-height: var(--vspace-btn);
+    display: inline-block;
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: .35em;
+    height: var(--btn-height);
+    line-height: calc(var(--btn-height) - .4rem);
+    padding: 0 3.6rem;
+    margin: 0 .4rem 1.6rem 0;
+    color: var(--color-btn-text);
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: var(--border-radius);
+    background-color: var(--color-btn);
+    border: 0.2rem solid var(--color-btn);
+}
+
+.btn:hover, 
+button:hover
+{
+    background-color: var(--color-btn-hover);
+    border-color: var(--color-btn-hover);
+    color: var(--color-btn-hover-text);
+    outline: 0;
+}
+
+/* button primary
+ * ------------------------------------------------- */
+.btn.btn--primary, 
+button.btn--primary {
+    background: var(--color-btn-primary);
+    border-color: var(--color-btn-primary);
+    color: var(--color-btn-primary-text);
+}
+
+.btn.btn--primary:hover, 
+button.btn--primary:hover, 
+.btn.btn--primary:focus, 
+button.btn--primary:focus {
+    background: var(--color-btn-primary-hover);
+    border-color: var(--color-btn-primary-hover);
+    color: var(--color-btn-primary-hover-text);
+}
+
+
+
 
 /* =================================================================== 
  * # additional components
  *
  * ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------- 
- * ## additional typo styles - (_additional-typo.scss)
- * ------------------------------------------------------------------- */
-.drop-cap:first-letter {
-    float: left;
-    font-family: var(--font-1);
-    font-weight: 700;
-    font-size: calc(3 * var(--space));
-    line-height: 1;
-    padding: 0 0.125em 0 0;
-    text-transform: uppercase;
-    background: transparent;
-    color: var(--color-text-dark);
-}
-
-/* line definition style 
- * ----------------------------------------------- */
-.lining dt, .lining dd {
-    display: inline;
-    margin: 0;
-}
-
-.lining dt+dt:before, .lining dd+dt:before {
-    content: "\A";
-    white-space: pre;
-}
-
-.lining dd+dd:before {
-    content: ", ";
-}
-
-.lining dd+dd:before {
-    content: ", ";
-}
-
-.lining dd:before {
-    content: ": ";
-    margin-left: -0.2em;
-}
-
-/* dictionary definition style 
- * ----------------------------------------------- */
-.dictionary-style dt {
-    display: inline;
-    counter-reset: definitions;
-}
-
-.dictionary-style dt+dt:before {
-    content: ", ";
-    margin-left: -0.2em;
-}
-
-.dictionary-style dd {
-    display: block;
-    counter-increment: definitions;
-}
-
-.dictionary-style dd:before {
-    content: counter(definitions, decimal) ". ";
-}
 
 
 
@@ -1798,19 +1644,7 @@ img,
  * # common and reusable styles
  *
  * ------------------------------------------------------------------- */
-.wide {
-    max-width: var(--width-wide);
-}
 
-.narrow {
-    max-width: var(--width-narrow);
-}
-
-.sticky-block {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 2rem;
-}
 
 .section-header-allcaps {
     display: inline-block;
@@ -1839,27 +1673,14 @@ img,
 /* ------------------------------------------------------------------- 
  * ## animation stuff 
  * ------------------------------------------------------------------- */
-.animate-this {
-    opacity: 0;
-    visibility: hidden;
-}
 
-.no-js .animate-this, 
-.no-cssanimations .animate-this {
+
+.no-js {
     opacity: 1;
     visibility: visible;
 }
 
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
-    animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
-}
+
 
 /* fade in up */
 @-webkit-keyframes fadeInUp {
