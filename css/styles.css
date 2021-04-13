@@ -1,88 +1,6 @@
-/* =================================================================== 
- * Ceevee Main Stylesheet
- * Template Ver. 2.0.0
- * 01-03-2021
- * ------------------------------------------------------------------
- *
- * TOC:
- * # settings and variables
- *      ## fonts
- *      ## colors
- *      ## vertical spacing and typescale
- *      ## grid variables
- * # normalize
- * # basic/base setup styles
- *      ## media
- *      ## typography resets
- *      ## links
- *      ## inputs
- * # Grid v3.0.0
- *      ## medium screen devices
- *      ## tablets
- *      ## mobile devices
- *      ## small mobile devices <= 400px
- * # block grids
- *      ## block grids - medium screen devices
- *      ## block grids - tablets
- *      ## block grids - mobile devices
- *      ## block grids - small mobile devices <= 400px
- * # MISC 
- * # custom grid, block grid STACK breakpoints
- * # base style overrides 
- *      ## links
- * # typography & general theme styles
- *      ## Lists
- *      ## responsive video container
- *      ## floated image
- *      ## tables
- *      ## spacing
- * # preloader
- *      ## page loaded
- * # forms 
- *      ## Style Placeholder Text
- * # buttons 
- * # additional components
- *      ## skillbars
- *      ## alert box
- *      ## pagination 
- * # common and reusable styles
- *      ## animation stuff 
- *      ## MailtoUI style overrides
- * # site header
- *      ## header nav
- *      ## mobile menu toggle 
- * # hero
- *      ## hero content
- *      ## hero social
- *      ## hero scrolldown
- *      ## animate intro content
- * # resume 
- *      ## resume block
- * # portfolio
- *      ## portfolio list
- *      ## modal popup
- * # CTA
- * # testimonials
- *      ## swiper style overrides
- *      ## testimonial slider 
- * # contact
- *      ## contact block
- * # footer
- *      ## footer social
- *      ## copyright
- *      ## go top
- *
- * ------------------------------------------------------------------ */
 
 
-/* ===================================================================
- * # settings and variables
- *
- * ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------- 
- * ## fonts
- * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap");
 :root {
     --font-1: "Inter", sans-serif;
@@ -215,24 +133,7 @@
     --vspace-5    : calc(5 * var(--space));
     --vspace-6    : calc(6.5 * var(--space));
 
-    /* type scale
-     * ratio 1:2 | base: 18px
-     * -------------------------------------------------------
-     *
-     * --text-display-3 = (77.40px)
-     * --text-display-2 = (64.50px)
-     * --text-display-1 = (53.75px)
-     * --text-xxxl      = (44.79px)
-     * --text-xxl       = (37.32px)
-     * --text-xl        = (31.10px)
-     * --text-lg        = (25.92px)
-     * --text-md        = (21.60px)
-     * --text-size      = (18.00px) BASE
-     * --text-sm        = (15.00px)
-     * --text-xs        = (12.50px)
-     *
-     * -------------------------------------------------------
-     */
+   
     --text-scale-ratio: 1.2;
     --text-size       : var(--base-font-size);
     --text-xs         : calc((var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
@@ -2964,12 +2865,11 @@ input[type="button"].btn--primary:focus {
     line-height: var(--vspace-1_25);
     text-transform: uppercase;
     letter-spacing: .25em;
-    padding-left: .3em;
+    padding-left: .25em;
     padding-bottom: .1em;
     margin-top: 0;
     margin-bottom: var(--vspace-1_5);
     position: relative;
-    text-align: center;
 }
 
 .section-header-allcaps:after {
@@ -2978,7 +2878,7 @@ input[type="button"].btn--primary:focus {
     height: 2px;
     width: 100%;
     background-color: var(--color-1);
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
 }
@@ -3039,126 +2939,6 @@ input[type="button"].btn--primary:focus {
     }
 }
 
-/* ------------------------------------------------------------------- 
- * ## MailtoUI style overrides
- * ------------------------------------------------------------------- */
-.mailtoui-modal {
-    --mailtoui-modal-head-bgcolor: var(--color-gray-18);
-    --mailtoui-modal-head-title-color: white;
-    --mailtoui-modal-body-bgcolor: var(--color-gray-14);
-    --mailtoui-button-bgcolor: var(--color-gray-16);
-    --mailtoui-button-text-color: white;
-    --mailtoui-button-bgcolor-hover: var(--color-2);
-    --mailtoui-button-text-color-hover: white;
-    --mailtoui-button-text-size: 16px;
-    --mailtoui-email-address-bgcolor: var(--color-gray-10);
-    --mailtoui-email-address-text-color: black;
-    font-family: var(--font-1);
-    background-color: #151515;
-    color: white;
-}
-
-.mailtoui-modal-content {
-    background-color: var(--mailtoui-modal-body-bgcolor);
-    border-radius: var(--border-radius);
-}
-
-.mailtoui-modal-content button {
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-.mailtoui-modal-head {
-    background-color: var(--mailtoui-modal-head-bgcolor);
-}
-
-.mailtoui-modal-title {
-    font-family: var(--font-1);
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--mailtoui-modal-head-title-color);
-}
-
-.mailtoui-modal-close {
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-    font-size: 32px;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.mailtoui-modal-close:hover, .mailtoui-modal-close:focus {
-    color: white;
-    font-weight: 300;
-}
-
-.mailtoui-modal-body {
-    background-color: var(--mailtoui-modal-body-bgcolor);
-}
-
-.mailtoui-button-text {
-    font-size: var(--mailtoui-button-text-size);
-    text-transform: none;
-    letter-spacing: 0;
-}
-
-.mailtoui-button:focus .mailtoui-button-content {
-    background-color: var(--color-2);
-    color: white;
-}
-
-.mailtoui-button-content, .mailtoui-button-copy {
-    background-color: var(--mailtoui-button-bgcolor);
-    color: var(--mailtoui-button-text-color);
-    border-radius: var(--border-radius);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.mailtoui-button-content:hover, 
-.mailtoui-button-content:focus, 
-.mailtoui-button-copy:hover, 
-.mailtoui-button-copy:focus {
-    background-color: var(--mailtoui-button-bgcolor-hover);
-    color: var(--mailtoui-button-text-color-hover);
-}
-
-.mailtoui-copy {
-    border-radius: var(--border-radius);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.mailtoui-button-icon-copy {
-    line-height: var(--vspace-1);
-}
-
-.mailtoui-button-copy-clicked, 
-.mailtoui-button-copy-clicked:hover, 
-.mailtoui-button-copy-clicked:focus {
-    background-color: #1F9D55;
-    color: white;
-}
-
-.mailtoui-email-address {
-    background-color: var(--mailtoui-email-address-bgcolor);
-    color: var(--mailtoui-email-address-text-color);
-    font-size: 16px;
-    line-height: 1;
-    border-radius: var(--border-radius);
-}
-
-.mailtoui-brand a {
-    color: rgba(255, 255, 255, 0.4);
-}
-
-.mailtoui-brand a:hover, .mailtoui-brand a:focus {
-    font-weight: 400;
-    color: white;
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3916,7 +3696,7 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .s-resume {
     background-color: white;
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(1 * var(--space));
     padding-bottom: var(--vspace-4);
 }
 
@@ -4022,7 +3802,7 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .s-portfolio {
     background-color: var(--color-gray-1);
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(2 * var(--space));
     padding-bottom: var(--vspace-5);
 }
 
@@ -4209,8 +3989,9 @@ input[type="button"].btn--primary:focus {
  * # contact
  *
  * ------------------------------------------------------------------- */
-.s-contact {
-    background-color: var(--color-gray-15);
+
+ .s-contact {
+    background-color: var(--color-gray-18);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-3_5);
 }
@@ -4224,7 +4005,7 @@ input[type="button"].btn--primary:focus {
     color: white;
     margin-top: 0;
     font-weight: 400;
-    font-size: 4.6rem;
+    font-size: 4rem;
     line-height: 1.304;
 }
 
@@ -4237,18 +4018,13 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .contact-infos .btn {
     margin-top: var(--vspace-0_75);
-    text-align: center;
-    
-    
 }
 
 .contact-block {
-    display: block;
-    position: relative;
     font-size: 2.8rem;
     font-weight: 400;
     line-height: 1.286;
-    align-items: center;
+    width: 400px;
 }
 
 .contact-block a {
@@ -4265,7 +4041,6 @@ input[type="button"].btn--primary:focus {
     color: rgba(255, 255, 255, 0.4);
     margin-top: 0;
     margin-bottom: .2rem;
-    
 }
 
 /* ------------------------------------------------------------------- 
@@ -4290,7 +4065,6 @@ input[type="button"].btn--primary:focus {
     }
     .s-contact__header {
         text-align: center;
-        align-items: center;
     }
     .s-contact .huge-text {
         font-size: 4.2rem;
@@ -4328,15 +4102,19 @@ input[type="button"].btn--primary:focus {
 }
 
 
+
+
+ 
 /* ===================================================================
  * # footer
  *
  * ------------------------------------------------------------------- */
-.s-footer {
-    background-color: var(--color-gray-10);
+ .s-footer {
+    background-color: var(--color-gray-18);
     padding-top: var(--vspace-1);
     padding-bottom: var(--vspace-3);
-    color: rgba(213, 209, 209, 0.2);
+
+    color: rgba(255, 255, 255, 0.2);
     position: relative;
 }
 
@@ -4353,6 +4131,36 @@ input[type="button"].btn--primary:focus {
     color: var(--color-2);
 }
 
+/* ------------------------------------------------------------------- 
+ * ## footer social
+ * ------------------------------------------------------------------- */
+
+ .s-footer__social {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    font-size: 2.6rem;
+    line-height: 1;
+    margin-top: var(--vspace-0_5);
+}
+
+.s-footer__social a {
+    color: white;
+    margin-right: var(--vspace-0_75);
+}
+
+.s-footer__social a:hover, 
+.s-footer__social a:focus {
+    color: var(--color-2-light);
+}
+
+.s-footer__social a:last-child {
+    margin-right: 0;
+}
 
 /* ------------------------------------------------------------------- 
  * ## copyright
@@ -4369,13 +4177,14 @@ input[type="button"].btn--primary:focus {
 .ss-copyright span {
     font-size: var(--text-sm);
     display: inline-block;
+    color: rgba(224, 218, 218, 0.898);
 }
 
 .ss-copyright span::after {
     content: "|";
     display: inline-block;
     padding: 0 .8rem 0 1rem;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(224, 218, 218, 0.898);
 }
 
 .ss-copyright span:last-child::after {
@@ -4421,7 +4230,7 @@ input[type="button"].btn--primary:focus {
 
 .ss-go-top a:hover, 
 .ss-go-top a:focus {
-    background-color: var(--color-1);
+    background-color: var(--color-white);
 }
 
 .ss-go-top svg {
