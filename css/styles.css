@@ -2964,11 +2964,12 @@ input[type="button"].btn--primary:focus {
     line-height: var(--vspace-1_25);
     text-transform: uppercase;
     letter-spacing: .25em;
-    padding-left: .25em;
+    padding-left: .3em;
     padding-bottom: .1em;
     margin-top: 0;
     margin-bottom: var(--vspace-1_5);
     position: relative;
+    text-align: center;
 }
 
 .section-header-allcaps:after {
@@ -2977,7 +2978,7 @@ input[type="button"].btn--primary:focus {
     height: 2px;
     width: 100%;
     background-color: var(--color-1);
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
 }
@@ -3479,7 +3480,7 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/header-bg-3000.jpg);
+    background-image: url(../assets/images/header-bg-3000.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4199,135 +4200,9 @@ input[type="button"].btn--primary:focus {
 }
 
 
-/* ===================================================================
- * # CTA
- *
- * ------------------------------------------------------------------- */
-.s-cta {
-    background-color: var(--color-gray-1);
-    padding-top: var(--vspace-2_5);
-    padding-bottom: var(--vspace-3_5);
-    font-weight: 400;
-    font-size: var(--text-lg);
-    line-height: var(--vspace-1_25);
-    text-align: center;
-    position: relative;
-}
-
-.s-cta .section-desc {
-    margin-top: 0;
-}
-
-.s-cta::before {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 20vw;
-    min-width: 150px;
-    background-color: var(--color-gray-3);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
-
-.cta-content {
-    max-width: 800px;
-}
-
-.cta-content .btn {
-    max-width: 600px;
-}
 
 
-/* ------------------------------------------------------------------- 
- * ## testimonial slider 
- * ------------------------------------------------------------------- */
-.testimonial-slider {
-    position: relative;
-}
 
-.testimonial-slider p {
-    font-weight: 400;
-    font-size: 1.7rem;
-    line-height: var(--vspace-1);
-}
-
-.testimonial-slider__slide {
-    position: relative;
-}
-
-.testimonial-slider__author {
-    display: inline-block;
-    min-height: var(--vspace-2);
-    margin-bottom: var(--vspace-0_5);
-    padding-left: 8.8rem;
-    position: relative;
-}
-
-.testimonial-slider__avatar {
-    width: var(--vspace-2);
-    height: var(--vspace-2);
-    border-radius: 100%;
-    outline: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.testimonial-slider__cite {
-    display: block;
-}
-
-.testimonial-slider__cite strong, 
-.testimonial-slider__cite span {
-    font-style: normal;
-}
-
-.testimonial-slider__cite strong {
-    font-size: calc(var(--text-size) * 0.944);
-    line-height: var(--vspace-0_5);
-    color: white;
-}
-
-.testimonial-slider__cite span {
-    display: block;
-    font-size: calc(var(--text-size) * 0.778);
-    font-weight: 300;
-    line-height: var(--vspace-0_5);
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * testimonials
- * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
-    .testimonial-slider__slide {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .testimonial-slider__author {
-        padding-left: 6.8rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .testimonial-slider__author {
-        padding-left: 0;
-        margin-bottom: var(--vspace-0_5);
-        min-height: 0;
-        text-align: center;
-    }
-    .testimonial-slider__avatar {
-        display: inline-block !important;
-        margin: 0;
-        position: static;
-    }
-}
 
 
 /* ===================================================================
@@ -4335,7 +4210,7 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    background-color: var(--color-gray-18);
+    background-color: var(--color-gray-15);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-3_5);
 }
@@ -4362,12 +4237,18 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .contact-infos .btn {
     margin-top: var(--vspace-0_75);
+    text-align: center;
+    
+    
 }
 
 .contact-block {
+    display: block;
+    position: relative;
     font-size: 2.8rem;
     font-weight: 400;
     line-height: 1.286;
+    align-items: center;
 }
 
 .contact-block a {
@@ -4384,6 +4265,7 @@ input[type="button"].btn--primary:focus {
     color: rgba(255, 255, 255, 0.4);
     margin-top: 0;
     margin-bottom: .2rem;
+    
 }
 
 /* ------------------------------------------------------------------- 
@@ -4408,6 +4290,7 @@ input[type="button"].btn--primary:focus {
     }
     .s-contact__header {
         text-align: center;
+        align-items: center;
     }
     .s-contact .huge-text {
         font-size: 4.2rem;
@@ -4450,10 +4333,10 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-    background-color: var(--color-gray-18);
+    background-color: var(--color-gray-10);
     padding-top: var(--vspace-1);
     padding-bottom: var(--vspace-3);
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(213, 209, 209, 0.2);
     position: relative;
 }
 
