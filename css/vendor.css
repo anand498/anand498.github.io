@@ -1,24 +1,4 @@
-/* =================================================================== 
- *  Ceevee Vendor/Third Party CSS
- *  Template Ver. 2.0.0 
- *  01-03-2021
- *  ------------------------------------------------------------------
- *
- * TOC:
- * # PrismJS 1.20.0 
- * # Swiper 6.4.5
- * # Basiclightbox
- *
- * =================================================================== */
 
-/* ===================================================================
- * # PrismJS 1.20.0
- *   https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+markup-templating+php 
- *   
- *   okaidia theme for JavaScript, CSS and HTML
- *   Loosely based on Monokai textmate theme by http://www.monokai.nl/
- *   @author ocodia
- * ------------------------------------------------------------------- */
 code[class*="language-"], pre[class*="language-"] {
     color: #f8f8f2;
     background: none;
