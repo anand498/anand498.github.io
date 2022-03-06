@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #01332d;
+  color: #032250;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -140,7 +140,7 @@ body {
 } */
 
 a {
-  color: #004d40;
+  color: #032250;
 }
 
 /* main blockqoute */
@@ -237,7 +237,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 56);
+  color: rgb(15, 88, 184);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
