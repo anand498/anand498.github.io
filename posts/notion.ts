@@ -8,7 +8,7 @@ export const POSTS = {
   },
   'go-dokku-deployment': {
     date: new Date('2021-06-28').toDateString(),
-    uri: 'shblog/Deploying-a-Go-App-with-Dokku-c504be4c35b34d20918a5cf23c0c5588',
+    uri: 'https://anandpandey.notion.site/Anand-Pandey-s-Website-44775db0667a476388c81aa78364487e',
   },
   'styled-system': {
     date: new Date('2021-07-06').toDateString(),

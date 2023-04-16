@@ -27,7 +27,7 @@ const Home = (): JSX.Element => (
         />
         <Title>Anand Pandey</Title>
         <Title
-          fontSize="2rem"
+          fontSize="1.75rem"
           color="rgba(0, 0, 0, 0.6)"
           fontWeight="500"
           as="h2"
@@ -35,10 +35,10 @@ const Home = (): JSX.Element => (
           I build Products. Great Products.
         </Title>
       </Container>
-      <Container maxWidth="700px" gridGap="3rem">
+      <Container maxWidth="600px" gridGap="2rem">
         <Container>
           <Text textAlign="center">
-            I&apos; I'm a Software Engineer at Telus AI. I have built 
+            I'm a Software Engineer at Telus AI. I have built 
             a couple of products and would love to work on more. Love products,coffee and content creation.
           </Text>
         </Container>
