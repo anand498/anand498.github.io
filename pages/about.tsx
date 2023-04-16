@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Text, Container, Grid, Link, Card } from '@components';
+import { Title, Text, Container, Grid } from '@components';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { getPosts, Post } from '@posts';
