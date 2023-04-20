@@ -33,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({
           that solve complex problems. With some experience as a product lead, I've had the opportunity to oversee the development and launch of several products in the field of data compliance."
         />
         <meta property="og:type" content="website" />
-        <meta property="twitter:site" content="@_shellbear" />
+        <meta property="twitter:site" content="@_heyyanand" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="og:image"

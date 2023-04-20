@@ -18,11 +18,10 @@ const Home = (): JSX.Element => (
     >
       <Container alignItems="center" alignContent="center">
         <Image
-          src="/myphoto.png"
+          src="/myphoto.JPG"
           alt="Anand Pandey"
-          width={120}
-          height={120}
-          objectFit="cover"
+          width={170}
+          height={180}
           className={styles.image}
         />
         <Title>Anand Pandey</Title>
@@ -32,18 +31,18 @@ const Home = (): JSX.Element => (
           fontWeight="500"
           as="h2"
         >
-          I build Products. Great Products.
+          I love building products with great teams. 
         </Title>
       </Container>
       <Container maxWidth="600px" gridGap="2rem">
         <Container>
           <Text textAlign="center">
             I'm a Software Engineer at Telus AI. I have built 
-            a couple of products and would love to work on more. Love products,coffee and content creation.
+            a couple of products and would love to work on more. Love to build products and looking to break into Product soon.
           </Text>
         </Container>
         <Link href="/about">
-          <Button>More about me &rarr;</Button>
+          <Button>More on me &rarr;</Button>
         </Link>
       </Container>
     </Container>
@@ -77,12 +76,12 @@ const Home = (): JSX.Element => (
               >
                 👋
               </motion.span>{' '}
-              Say hello
+              Say Hi!
             </Button>
           </Link>
           <Link
             target="_blank"
-            href="https://calendly.com/antoine-ordonez/intro"
+            href="https://calendly.com/anand498"
           >
             <Button
               width="100%"

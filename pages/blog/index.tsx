@@ -24,7 +24,7 @@ const Blog: NextPage<BlogProps> = ({ pages }) => {
       <Container mb="3rem">
         <Title>Blog</Title>
         <Text textAlign="center">
-          Posts about code, projects and various other things.
+          I write about products, tech and some random things; here and there
         </Text>
       </Container>
       <Grid gridTemplateColumns={['1fr', '1fr 1fr']} gridGap={['3rem', '2rem']}>

@@ -8,20 +8,20 @@ import Close from '@icons/Close';
 
 const states: { [key: string]: React.CSSProperties } = {
   '/': {
-    left: '6px',
-    width: '61px',
+    left: '3px',
+    width: '58px',
   },
   '/about': {
-    left: '81px',
-    width: '65px',
+    left: '63px',
+    width: '60px',
   },
   '/blog': {
-    left: '157px',
-    width: '55px',
+    left: '127px',
+    width: '50px',
   },
   '/projects': {
-    left: '340px',
-    width: '79px',
+    left: '185px',
+    width: '72px',
   },
 };
 
@@ -55,7 +55,7 @@ const Links = (): JSX.Element => (
   <>
     <NavLink href="/">Home</NavLink>
     <NavLink href="/about">About</NavLink>
-    <NavLink href="/blog">Blog</NavLink>
+    <NavLink href="/blog">Blogs</NavLink>
     <NavLink href="/projects">Projects</NavLink>
   </>
 );
@@ -106,15 +106,15 @@ const Nav = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
       )}
       <Container alignContent="center" display={['none', 'flex', 'flex']}>
         <Grid
-          width="fit-content"
-          gridGap="2rem"
+          width='fit-content'
+          gridGap="1rem"
           alignItems="center"
           justifyItems="center"
           gridTemplateColumns="repeat(5, auto)"
           style={{
             borderRadius: '25px',
             background: 'rgba(0, 0, 0, 0.04)',
-            padding: '15px',
+            padding: '10px',
             position: 'relative',
           }}
         >
@@ -123,7 +123,7 @@ const Nav = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
               background: 'white',
               position: 'absolute',
               borderRadius: '25px',
-              height: '85%',
+              height: '75%',
               left: '6px',
               width: '6px',
               ...navStyle,
@@ -131,9 +131,6 @@ const Nav = ({ isOpen, onOpen, onClose }: NavProps): JSX.Element => {
           />
           <Links />
         </Grid>
-      </Container>
-      <Container alignContent="flex-end" display={['none', 'none', 'flex']}>
-        <NavLink href="mailto:heyanand498@gmail.com">Contact</NavLink>
       </Container>
     </Grid>
   );
