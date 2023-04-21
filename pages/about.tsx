@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { getPosts, Post } from '@posts';
 interface AboutProps {
   experiences: Post[];
-  educaton: Post[];
+  education: Post[];
 }
 
 
