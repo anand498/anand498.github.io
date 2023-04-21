@@ -43,7 +43,7 @@ const Layout: React.FC<LayoutProps> = ({
           <>
             <Script
               async
-              src="https://www.googletagmanager.com/gtag/js?id=G-JCDW4G1YZR"
+              src="https://www.googletagmanager.com/gtag/js?id=G-Z7NXGXH1BG"
             />
             <Script
               id="gtm-script"
@@ -54,7 +54,7 @@ const Layout: React.FC<LayoutProps> = ({
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
       
-                  gtag('config', 'G-JCDW4G1YZR');`,
+                  gtag('config', 'G-Z7NXGXH1BG');`,
               }}
             />
           </>
