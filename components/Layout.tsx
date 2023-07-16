@@ -33,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({
           that solve complex problems. With some experience as a product lead, I've had the opportunity to oversee the development and launch of several products in the field of data compliance."
         />
         <meta property="og:type" content="website" />
-        <meta property="twitter:site" content="@_shellbear" />
+        <meta property="twitter:site" content="@_heyyanand" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="og:image"
@@ -43,7 +43,7 @@ const Layout: React.FC<LayoutProps> = ({
           <>
             <Script
               async
-              src="https://www.googletagmanager.com/gtag/js?id=G-RZP6RWZ32F"
+              src="https://www.googletagmanager.com/gtag/js?id=G-Z7NXGXH1BG"
             />
             <Script
               id="gtm-script"
@@ -54,7 +54,7 @@ const Layout: React.FC<LayoutProps> = ({
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
       
-                  gtag('config', 'G-RZP6RWZ32F');`,
+                  gtag('config', 'G-Z7NXGXH1BG');`,
               }}
             />
           </>

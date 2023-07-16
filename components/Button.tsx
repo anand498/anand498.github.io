@@ -56,7 +56,7 @@ const Button = styled.button<
   border: none;
   transition: ease-in-out 0.15s;
   outline: 0;
-  color: white;
+  color: #96C2DB;
 
   ${({ variant }) =>
     variant === 'animated' &&
