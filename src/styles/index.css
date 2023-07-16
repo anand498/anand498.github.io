@@ -13,23 +13,23 @@
 .body-light {
 	--bg: #f5f6f7;
 	--bg-alt: #fff;
-	--fg: #444;
-	--fg-alt: #222;
-	--primary: #c38926;
+	--fg: #222222;
+	--fg-alt: #3d3b3b;
+	--primary: #387bb7;
 	--primary-alt: #185dc7;
 	--primary-light: rgba(44, 93, 206, 0.1);
 	--container-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
 .body-dark {
-	--bg: #030217;
-	--bg-alt: rgb(22 28 41 / 33%);
+	--bg: #0a073b;
+	--bg-alt: rgba(60, 75, 107, 0.33);
 	--fg: #bdbddd;
 	--fg-alt: #5d5dcc;
 	--primary: #bebdcb;
 	--primary-alt: #706aec;
 	--primary-light: rgb(18 17 49 / 44%);
-	--container-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+	--container-shadow: rgba(109, 103, 103, 0.1) 0px 4px 6px -1px,
 		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
