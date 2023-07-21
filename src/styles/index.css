@@ -1,14 +1,3 @@
-/* table of contents */
-
-/* 1. variables*/
-/* 2. global styles */
-/* 3. layout */
-/* 4. components */
-/* 5. utilities */
-
-/* ================
-	 1. variables
-   ================ */
 
 .body-light {
 	--bg: #f5f6f7;
@@ -16,6 +5,7 @@
 	--fg: #222222;
 	--fg-alt: #3d3b3b;
 	--primary: #387bb7;
+	
 	--primary-alt: #185dc7;
 	--primary-light: rgba(44, 93, 206, 0.1);
 	--container-shadow: 0 2px 4px rgb(0 0 0 / 10%);
@@ -30,6 +20,7 @@
 	--primary-alt: #706aec;
 	--primary-light: rgb(18 17 49 / 44%);
 	--container-shadow: rgba(109, 103, 103, 0.1) 0px 4px 6px -1px,
+
 		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
@@ -88,6 +79,7 @@ body {
 	line-height: 1.5;
 	transition: background-color 0.1s linear;
 }
+
 
 h1,
 h2,
@@ -241,7 +233,8 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--bg-alt);
-	max-width: 800px;
+
+	max-width: 950px;
 	width: 75%;
 	margin: 2em auto;
 	padding: 2em;
@@ -294,12 +287,12 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--bg-alt);
-	max-width: 850px;
+	max-width: 950px;
 	width: 95%;
 	margin: 2em auto;
 	padding: 2em;
 	text-align: center;
-	box-shadow: var(--container-shadow);
+	/* box-shadow: var(--container-shadow); */
 	border-radius: 1em;
 }
 
@@ -321,18 +314,18 @@ section {
 
 
 .education-container {
-	display: inline-flexbox;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--bg-alt);
-	max-width: 600px;
-	width: 95%;
+
+	display: flex;
+    justify-content: space-between;
+	width: 560px;
+	box-shadow: var(--container-shadow);
+	border-radius: 3em;
+	max-width: 700px;
+	width: 600px;
 	margin: 2em auto;
 	padding: 2em;
 	text-align: center;
-	box-shadow: var(--container-shadow);
-	border-radius: 3em;
-	
+
 }
 
 .education img {
@@ -363,6 +356,8 @@ section {
 
 .tech-container {
 	width: 14em;
+	width: 10em;
+
 	height: 10em;
 	position: relative;
 	display: flex;
@@ -412,6 +407,14 @@ section {
 .contact .icon,
 .hero .icon {
 	margin-right: 0.2em;
+}
+
+.profile-image{
+	margin-left: 10em; 
+	height:350px; 
+	width: 300px; 
+	border-radius: 50%; 
+	border: 4px solid #0e0e0c;
 }
 
 footer {
