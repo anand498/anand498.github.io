@@ -315,7 +315,6 @@ section {
 .experience-content {
 	flex-basis: 50%;
 	margin-left: 1em;
-	justify-content: center;
 }
 
 
@@ -444,7 +443,7 @@ section {
 
 footer {
 	margin-top: 5em;
-	height: 7em;
+	height: 4em;
 	flex-direction: column;
 	justify-content: center;
 	position: absolute;
